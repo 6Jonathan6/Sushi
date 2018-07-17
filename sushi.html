@@ -8,7 +8,8 @@
     <style>
         div.seaweed{
             width: 300px;
-            height: 300px;
+            min-height: 300px;
+            height: auto;
             border: 6px solid #22382F;
             border-radius: 40%;
             box-sizing: border-box;
@@ -16,29 +17,31 @@
             padding-top: -1px;
             padding-left: 16px;
             padding-right: 0px;
+            padding-bottom: 0.25rem;
             transform: skew(0deg, 3deg);
-            box-shadow: 0px 7px #22382F;
+            /* box-shadow: 0px 7px #22382F; */
             background-image: radial-gradient(#ffa07a 5%, white 80%, #22382F 15%);
         }
         div.rice{
+            min-height: 300px;
             border-radius:40%;
             border-top:6px solid #22382F;
             border-right:1px solid #22382F;
             width: 100%;
             height: 100%;
-            padding: 1px 10px 1px 0px;
+            padding: 18px 10px 10px 0px;
             box-sizing: border-box;
             display: flex;
+            
             align-items: center;
             justify-content: center;
-            margin-right: -3px;
+            margin-right: 0px;
         }
         div.center{
-            align-items: flex-start;
-            justify-content: center;
+            
             background: repeating-linear-gradient(45deg,#ffa07a,#ffa07a 30px, rgb(245,245,245) 30px, rgb(245,245,245) 33px);
             width: calc(100% - 30px);
-            height: calc(100% - 30px);
+            height: auto;
             box-sizing: border-box;
             border-radius: 30%;
             transform: skew(4deg, -9deg);
@@ -51,7 +54,7 @@
             align-items: center;
             justify-content: flex-start;
             margin:  25px 0 0;
-            padding: 0;
+            padding: 0rem 0.25rem 1rem  0.25rem;
             list-style: none;
         }
         div.center ul li{
@@ -61,6 +64,7 @@
         }
         div.center ul li p{
             margin: 0.25rem  0 0 0;
+            max-width: 250px;
             padding: 0;
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
@@ -71,6 +75,20 @@
         div.center ul li p.title{
             font-size: 1.4rem;
             animation: colors 2s infinite;
+        }
+        div.center  ul li button{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 1.4rem;
+            border: none;
+            width: 100px;
+            height: auto;
+            color: white;
+            background: #73AF59;
+            transform: rotate(-15deg);
+            margin: 0;
+            margin-top: 1rem;
+            padding: 0;
         }
         @keyframes colors{
             from{color: rgba(6, 188, 233, 0.472)}
@@ -88,10 +106,16 @@
                         <p class="title">Ukyo's Roll</p>
                     </li>
                     <li>
+                        <!-- Description máxima de 150 caractéres -->
                         <p>
                             Por dentro agucate, pepino y pollo teriyaki, por fuera ajonjolí
-                            arcoiris
+                            arcoiris.
+                            
                         </p>
+                    </li>
+                    <li>
+                        <button>Eat me!</button>
+
                     </li>
                 </ul>
             </div>
