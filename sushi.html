@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sushi</title>
+    <style>
+        div.seaweed{
+            width: 300px;
+            height: 300px;
+            border: 6px solid #22382F;
+            border-radius: 40%;
+            box-sizing: border-box;
+            margin: auto;
+            padding-top: -1px;
+            padding-left: 16px;
+            padding-right: 0px;
+            transform: skew(0deg, 3deg);
+            box-shadow: 0px 7px #22382F;
+            background-image: radial-gradient(#ffa07a 5%, white 80%, #22382F 15%);
+        }
+        div.rice{
+            border-radius:40%;
+            border-top:6px solid #22382F;
+            border-right:1px solid #22382F;
+            width: 100%;
+            height: 100%;
+            padding: 1px 10px 1px 0px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: -3px;
+        }
+        div.center{
+            align-items: flex-start;
+            justify-content: center;
+            background: repeating-linear-gradient(45deg,#ffa07a,#ffa07a 30px, rgb(245,245,245) 30px, rgb(245,245,245) 33px);
+            width: calc(100% - 30px);
+            height: calc(100% - 30px);
+            box-sizing: border-box;
+            border-radius: 30%;
+            transform: skew(4deg, -9deg);
+            color: white;
+        }
+        div.center ul{
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin:  25px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+        div.center ul li{
+            margin: 0;
+            padding: 0rem;
+
+        }
+        div.center ul li p{
+            margin: 0.25rem  0 0 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: #000539;;
+            font-size: 1.2rem;
+            text-align: center
+        }
+        div.center ul li p.title{
+            font-size: 1.4rem;
+            animation: colors 2s infinite;
+        }
+        @keyframes colors{
+            from{color: rgba(6, 188, 233, 0.472)}
+            to {color:#383900; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="seaweed">
+        <div class="rice">
+            <div class="center">
+                <ul>
+                    <li>
+                        <p class="title">Ukyo's Roll</p>
+                    </li>
+                    <li>
+                        <p>
+                            Por dentro agucate, pepino y pollo teriyaki, por fuera ajonjolí
+                            arcoiris
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
